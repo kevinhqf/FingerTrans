@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">指尖翻译</string>
+    <string name="appmanage">监听应用</string>
+    <string name="user_tip"><![CDATA[android 5.0以上的系统需手动设置权限\n设置 > 安全 > 查看使用情况]]></string>
+    <string name="string_example">用指尖复制,我就可以翻译了!\nUse your finger to copy,I can translate!</string>
+    <string name="da_tip">不止在这复制有效,其他被监听的应用也可以进行复制翻译!</string>
+    <string name="star_me_btn">Star Me</string>
+</resources>

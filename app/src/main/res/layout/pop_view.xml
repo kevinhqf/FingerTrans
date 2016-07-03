@@ -8,12 +8,12 @@
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="#fff"
+        app:cardBackgroundColor="@color/ThemeBG"
         app:cardCornerRadius="2dp"
         app:contentPaddingLeft="10dp"
         app:contentPaddingRight="10dp"
         app:contentPaddingBottom="10dp"
-        app:contentPaddingTop="10dp">
+        app:contentPaddingTop="5dp">
 
         <RelativeLayout
             android:id="@+id/pv_rl_content"
@@ -28,7 +28,6 @@
                 android:layout_marginBottom="3dp"
                 android:ellipsize="end"
                 android:maxLines="1"
-                android:text=" a powerful, yet lightweight logging library."
                 android:textColor="@android:color/black"
                 android:textStyle="bold" />
 
@@ -40,7 +39,6 @@
                 android:ellipsize="end"
                 android:lineSpacingExtra="2dp"
                 android:maxLines="4"
-                android:text="一个强大的、轻量级的日志库。"
                 android:textColor="#aa000000" />
 
             <TextView
@@ -50,8 +48,7 @@
                 android:layout_below="@id/pv_tv_translate"
                 android:ellipsize="end"
                 android:lineSpacingExtra="2dp"
-                android:maxLines="3"
-                android:text="一个强大的、轻量级的日志库"
+                android:maxLines="4"
                 android:textColor="#aa000000" />
 
 

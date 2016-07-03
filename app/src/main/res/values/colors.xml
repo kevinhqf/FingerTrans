@@ -6,4 +6,5 @@
     <color name="colorUnCheck">#a5a5a5</color>
     <color name="colorDark">#d7000000</color>
     <color name="ColorGrey">#60999999</color>
+    <color name="ThemeBG">#f2f4f6</color>
 </resources>

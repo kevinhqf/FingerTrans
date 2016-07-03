@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Finger Trans</string>
+    <string name="appmanage">Choose App</string>
+    <string name="user_tip">Android 5.0 and above need to grant permission manually!\nSecurity > Apps with usage access.</string>
+    <string name="string_example">用指尖复制,我就可以翻译了!\nUse your finger to copy,I can translate!</string>
+    <string name="da_tip">You can copy a word to translate  in an another application! </string>
+    <string name="star_me_btn">Star Me</string>
 </resources>

@@ -2,29 +2,29 @@
   {
     "id": 0,
     "type": 2,
-    "title": "启动翻译服务",
-    "detail": "为得到更好的体验,建议将此应用添加为系统自启动",
+    "title": "Start the translation service",
+    "detail": "To get a better experience,suggest to add this to automatic startup items.",
     "isChecked": true
   },
   {
     "id": 1,
     "type": 1,
-    "title": "管理监听应用",
-    "detail": "为指定应用添加翻译服务",
+    "title": "Application Management",
+    "detail": "Support the translate service for the specified application.",
     "isChecked": false
   },
   {
     "id": 2,
     "type": 2,
-    "title": "开机启动",
-    "detail": "开机后在后台启动翻译服务",
+    "title": "Start service after boot",
+    "detail": "Start the translate service after the boot completed.",
     "isChecked": false
   },
   {
     "id": 3,
     "type": 0,
-    "title": "关于",
-    "detail": "v1.0.0",
+    "title": "About",
+    "detail": "The instructions for use,star this project on github.",
     "isChecked": false
   }
 ]

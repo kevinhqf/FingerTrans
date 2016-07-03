@@ -1,13 +1,17 @@
 package com.source.kevin.fingertrans;
 
+import android.app.Dialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.TextView;
 
 import com.source.kevin.fingertrans.appmanage.AppManageActivity;
 import com.source.kevin.fingertrans.data.Setting;
@@ -16,7 +20,6 @@ import com.source.kevin.fingertrans.setting.SettingContract;
 import com.source.kevin.fingertrans.setting.SettingPresenter;
 import com.source.kevin.fingertrans.translate.TranslationService;
 import com.source.kevin.fingertrans.utils.SettingPreference;
-import com.source.kevin.fingertrans.view.DividerDecoration;
 import com.source.kevin.fingertrans.view.OnItemClickListener;
 
 import java.util.ArrayList;
@@ -100,9 +103,22 @@ public class MainActivity extends AppCompatActivity implements SettingContract.V
                 break;
 
             case SettingPresenter.ID_ABOUT:
+                final Dialog d = new Dialog(this, R.style.Dialog);
+                d.setContentView(R.layout.dialog_about);
+                TextView tv_star = (TextView) d.findViewById(R.id.da_btn_star);
+                tv_star.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        String url = "https://github.com/kevinhqf/FingerTrans";
+                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                        startActivity(intent);
+                        d.dismiss();
+                    }
+                });
+                d.show();
                 break;
             case SettingPresenter.ID_BOOT_START:
-                SettingPreference.getInstance().save(SettingPreference.SP_SETTING_LIST
+                SettingPreference.getInstance().save(SettingPreference.getInstance().getSPSettingList()
                         , SettingPreference.BOOT_COMPLETE_START, s.isChecked());
                 break;
             case SettingPresenter.ID_APP_MANAGE:

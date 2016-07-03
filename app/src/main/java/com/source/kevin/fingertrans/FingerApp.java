@@ -3,6 +3,8 @@ package com.source.kevin.fingertrans;
 import android.app.Application;
 import android.content.Context;
 
+import java.util.Locale;
+
 /**
  * Created by kevin on 6/28/16.
  */
@@ -19,5 +21,7 @@ public class FingerApp extends Application {
     }
 
 
-
+    public static String getLanguage(){
+        return Locale.getDefault().getLanguage();
+    }
 }

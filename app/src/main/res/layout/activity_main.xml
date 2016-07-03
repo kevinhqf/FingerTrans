@@ -5,7 +5,7 @@
     android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f2f4f6"
+    android:background="@color/ThemeBG"
 
     tools:context="com.source.kevin.fingertrans.MainActivity">
 
@@ -23,8 +23,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/app_name"
-            android:textColor="#fff"
-            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_size"
             android:textStyle="bold" />
     </RelativeLayout>
 
@@ -43,11 +43,5 @@
         android:id="@+id/am_rv_setting"
         android:layout_height="match_parent"/>
 
-    <!--<android.support.design.widget.FloatingActionButton-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_alignParentBottom="true"-->
-    <!--android:layout_alignParentRight="true"-->
-    <!--android:layout_margin="@dimen/activity_horizontal_margin"-->
-    <!--android:src="@drawable/ic_share" />-->
+
 </RelativeLayout>

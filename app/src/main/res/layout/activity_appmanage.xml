@@ -4,7 +4,7 @@
     android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f2f4f6">
+    android:background="@color/ThemeBG">
 
     <RelativeLayout
         android:id="@+id/aa_tl_top"
@@ -19,27 +19,37 @@
             android:layout_height="match_parent"
             android:layout_centerHorizontal="true"
             android:gravity="center"
-            android:text="监听应用"
-            android:textColor="#fff"
-            android:textSize="20sp"
+            android:text="@string/appmanage"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_size"
             android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/aa_iv_back"
             android:layout_width="40dp"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_chevron_left" />
+            android:src="@drawable/ic_chevron_left"
+             />
 
 
     </RelativeLayout>
 
 
+    <TextView
+        android:id="@+id/aa_tv_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aa_tl_top"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/user_tip"
+        android:textSize="18sp" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/aa_rv_apps"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/aa_tl_top" />
+        android:layout_below="@id/aa_tv_txt" />
 
 
 </RelativeLayout>

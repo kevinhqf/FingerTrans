@@ -66,16 +66,15 @@ public class AppUtils {
             return SettingPreference.getInstance().isListened(packageName);
 
         } //after api21
-        else if (Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP) {
+        else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             String s = queryUsageStats();
             Log.e("name", s);
+            return SettingPreference.getInstance().isListened(s);
         }
-
-
         return true;
     }
 
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP_MR1)
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public static String queryUsageStats() {
         String packageName=null;
         UsageStatsManager usm = (UsageStatsManager) FingerApp.get().getSystemService(Context.USAGE_STATS_SERVICE);
