@@ -21,15 +21,22 @@
             android:text="@string/app_name"
             android:textSize="18sp" />
 
-        <TextView
+        <EditText
+            android:editable="false"
             android:id="@+id/da_tv_example"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/da_tv_title"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:inputType="none"
             android:lineSpacingExtra="5dp"
             android:padding="5dp"
             android:text="@string/string_example"
-            android:textIsSelectable="true" />
+            android:textIsSelectable="true"
+             />
 
         <TextView
             android:id="@+id/da_tv_tip"
@@ -37,8 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/da_tv_example"
             android:padding="5dp"
-            android:text="@string/da_tip"
-            android:textIsSelectable="true" />
+            android:text="@string/da_tip" />
 
         <TextView
             android:id="@+id/da_btn_star"
