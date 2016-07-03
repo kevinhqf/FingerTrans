@@ -1,18 +1,21 @@
 ### 指尖翻译
 本应用是参考[maoruibin](https://github.com/maoruibin)作者的[咕咚翻译](https://github.com/maoruibin/TranslateApp)项目想法所开发的一款即时翻译的软件;
 #### 介绍
-一款实现了简单的 **划词翻译** 功能的Android应用
+一款实现了简单的 **划词翻译** 功能的Android应用  
 <img src="http://o7x6n1hmo.bkt.clouddn.com/image/fingertrans/2057965061.jpg" width = "400" height = "800" alt="Demo" align=center />
+
 #### 技术特性
 1. 采用MVP设计
 2. 使用Retrofit + RxJava 进行网络服务的访问和数据的加载
 3. 实现对粘贴板的监听
 4. 使用有道翻译的API
 5. 在特定的应用下才进行翻译,无需因为频繁的弹窗而感到厌烦
+6. 支持机型,Android4.1以上
 
 
 #### 下载
-
+![二维码](http://o7x6n1hmo.bkt.clouddn.com/image/fingertrans/1467542019.png)  
+[指尖翻译](http://115.28.173.76/FingerTrans.apk)
 
 
 
