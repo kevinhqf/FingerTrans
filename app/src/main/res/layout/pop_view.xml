@@ -28,6 +28,7 @@
                 android:layout_marginBottom="3dp"
                 android:ellipsize="end"
                 android:maxLines="1"
+                android:text="复制的内容"
                 android:textColor="@android:color/black"
                 android:textStyle="bold" />
 
@@ -38,10 +39,12 @@
                 android:layout_below="@id/pv_tv_query"
                 android:ellipsize="end"
                 android:lineSpacingExtra="2dp"
+                android:text="翻译的结果"
                 android:maxLines="4"
                 android:textColor="#aa000000" />
 
             <TextView
+                android:text="词典的详细解析"
                 android:id="@+id/pv_tv_explains"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

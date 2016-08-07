@@ -11,11 +11,11 @@ import rx.Subscriber;
 /**
  * the pop presenter
  */
-public class PopPresenter implements PopupContract.Presenter {
+public class PopPresenter implements PopContract.Presenter {
 
-    private PopupContract.View mView;
+    private PopContract.View mView;
 
-    public PopPresenter(PopupContract.View view) {
+    public PopPresenter(PopContract.View view) {
         this.mView = view;
 
         mView.setPresenter(this);

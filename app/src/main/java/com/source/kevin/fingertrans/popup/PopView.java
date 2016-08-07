@@ -7,7 +7,6 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.source.kevin.fingertrans.R;
@@ -15,37 +14,40 @@ import com.source.kevin.fingertrans.data.TransInfo;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 /**
  * PopView
  */
-public class PopView implements PopupContract.View, View.OnClickListener {
+public class PopView implements PopContract.View, View.OnClickListener {
+
 
     private WindowManager mWindowManager;
     private Context mContext;
+    // 取消悬浮窗的监听器
     private OnViewDismissListener mOnViewDismissListener;
+    // 悬浮窗的View
     private LinearLayout mPopView;
+    // 悬浮窗内的各个控件
     @BindView(R.id.pv_tv_query)
     TextView tv_query;
     @BindView(R.id.pv_tv_translate)
     TextView tv_translation;
     @BindView(R.id.pv_tv_explains)
     TextView tv_explain;
-    // the flag that is the popView dismiss
+    // 作为悬浮窗是否显示的标志
     private boolean isDismiss = true;
 
 
     public PopView(Context application) {
         mContext = application;
+        // 获取系统的WindowManager
         mWindowManager = (WindowManager) application.getSystemService(Context.WINDOW_SERVICE);
 
     }
 
 
     /**
-     * calculate the popup view layout parameters
-     *
+     * 计算获取悬浮窗的布局参数
      * @return the popView layout parameter
      */
     private WindowManager.LayoutParams getPopViewParams() {
@@ -130,7 +132,7 @@ public class PopView implements PopupContract.View, View.OnClickListener {
     }
 
     @Override
-    public void setPresenter(PopupContract.Presenter presenter) {
+    public void setPresenter(PopContract.Presenter presenter) {
         
     }
 

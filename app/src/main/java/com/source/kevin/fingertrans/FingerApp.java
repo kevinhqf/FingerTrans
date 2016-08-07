@@ -6,7 +6,7 @@ import android.content.Context;
 import java.util.Locale;
 
 /**
- * Created by kevin on 6/28/16.
+ * 作为全局的Application
  */
 public class FingerApp extends Application {
     private static Context mContext;

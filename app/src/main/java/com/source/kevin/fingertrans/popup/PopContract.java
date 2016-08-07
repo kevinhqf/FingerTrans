@@ -7,7 +7,7 @@ import com.source.kevin.fingertrans.mvp.BaseView;
 /**
  * the popup contract class
  */
-public class PopupContract {
+public class PopContract {
 
     interface View extends BaseView<Presenter>{
         void showPopView(TransInfo info);
