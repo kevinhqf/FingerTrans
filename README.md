@@ -4,10 +4,7 @@
 一款实现了简单的 **划词翻译** 功能的Android应用  
 <img src="http://o7x6n1hmo.bkt.clouddn.com/image/fingertrans/2057965061.jpg" width = "400" height = "800" alt="Demo" align=center />
 #### 使用Demo
-<video id="video" controls="" preload="none" poster="http://media.w3.org/2010/05/sintel/poster.png">
-      <source id="mp4" src="http://115.28.173.76/using_demo.mp4" type="video/mp4">
-      <a href="http://115.28.173.76/using_demo.mp4">Video Demo</a>
-    </video>
+![应用演示](http://o7x6n1hmo.bkt.clouddn.com/image/demo.gif)
 #### 技术特性
 1. 采用MVP设计
 2. 使用Retrofit + RxJava 进行网络服务的访问和数据的加载
@@ -18,7 +15,7 @@
 
 
 #### 下载
-![二维码](http://o7x6n1hmo.bkt.clouddn.com/image/fingertrans/1467542019.png)  
+
 [指尖翻译](http://115.28.173.76/FingerTrans.apk)
 
 

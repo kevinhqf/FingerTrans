@@ -9,8 +9,6 @@ public class TransResult {
     List<String> translation;
     TransBasic basic;
     String query;
-    int errorCode;
-    List<WebTrans> web;
 
 
 
@@ -38,19 +36,4 @@ public class TransResult {
         this.query = query;
     }
 
-    public int getErrorCode() {
-        return errorCode;
-    }
-
-    public void setErrorCode(int errorCode) {
-        this.errorCode = errorCode;
-    }
-
-    public List<WebTrans> getWeb() {
-        return web;
-    }
-
-    public void setWeb(List<WebTrans> web) {
-        this.web = web;
-    }
 }
